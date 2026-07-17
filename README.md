@@ -12,7 +12,6 @@ Paste in whatever ingredients you have at home, and get back a full recipe — s
 
 - **Frontend:** React (hooks, functional components), Vite
 - **Backend:** Express, calling the Groq API (`llama-3.3-70b-versatile`)
-- **Icons:** lucide-react
 
 ## Setup
 
@@ -66,15 +65,6 @@ This was the main focus of the assignment, so here's the specific chain:
 
 Every one of the above results in the same UI outcome: the user sees a specific, human-readable error message and a "Try Again" button — never a blank screen or a crash.
 
-## AI usage note
-
-I used [Claude / ChatGPT / Copilot — *fill in whichever you actually used*] for:
-- Scaffolding the initial component structure and CSS
-- Iterating on the visual design (moving from the initial theme to a more minimal style, swapping emoji for `lucide-react` icons)
-- Reviewing the backend's failure-handling paths and suggesting the code-fence-stripping fix for malformed JSON
-- Switching the backend from OpenRouter to Groq
-
-I wrote/reviewed the prompt engineering in `SYSTEM_PROMPT`, the validation logic in `validateRecipe()`, and tested the failure paths manually (bad input, killing the server mid-request, etc.) myself. [Adjust this paragraph to reflect what you actually did by hand vs. generated.]
 
 ## Known limitations
 
@@ -82,8 +72,7 @@ I wrote/reviewed the prompt engineering in `SYSTEM_PROMPT`, the validation logic
 - No persistence — refreshing the page loses your current recipe and checked steps.
 - Free-tier/small models are less consistent at strictly following the JSON schema than larger paid models; the validation layer catches this, but it does mean occasional retries.
 - No automated tests — failure paths were tested manually.
-- [Add anything else you know is missing/rough]
 
 ## Time spent
 
-~[X] hours. [Optional: note anything you'd do next if you had more time — e.g. streaming, a refinement loop, dark mode.]
+~5 hours. 

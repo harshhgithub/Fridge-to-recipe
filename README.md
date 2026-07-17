@@ -47,8 +47,6 @@ npm run dev
 
 App runs on `http://localhost:5173` (default Vite port).
 
-If your backend runs somewhere other than `localhost:5000`, set `VITE_API_URL` in a `.env` file in `client/`.
-
 ## How failure handling works
 
 This was the main focus of the assignment, so here's the specific chain:

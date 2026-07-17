@@ -34,8 +34,7 @@ Get a free Groq API key at [console.groq.com](https://console.groq.com).
 ```
 npm start
 ```
-
-Server runs on `http://localhost:5000`. Health check: `GET /api/health`.
+Health check: `GET /api/health`.
 
 ### 2. Frontend
 
@@ -44,8 +43,6 @@ cd client
 npm install
 npm run dev
 ```
-
-App runs on `http://localhost:5173` (default Vite port).
 
 ## How failure handling works
 
